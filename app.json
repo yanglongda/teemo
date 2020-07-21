@@ -1,0 +1,75 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/me/me/index",
+    "pages/me/personal/index",
+    "pages/me/school-roll/school-roll",
+    "pages/me/identity/identity",
+    "pages/me/card-record/index",
+    "pages/me/point-details/index",
+    "pages/me/about/index",
+    "pages/goal/goal/index",
+    "pages/goal/goal-item/index",
+    "pages/goal/goal-details/index",
+    "pages/goal/goal-clock/index",
+    "pages/goal/goal-clock-record/index",
+    "pages/goal/goal-manage/index",
+    "pages/goal/goal-honor/index",
+    "pages/goal/goal-honor-details/index",
+    "pages/application/all-application/index",
+    "pages/card/index",
+    "pages/collar-card/identity-select/index",
+    "pages/collar-card/auth-self/index",
+    "pages/collar-card/auth/index",
+    "pages/collar-card/agreement/index",
+    "pages/results/error-page/index",
+    "pages/results/error/index",
+    "pages/results/error-page1/index",
+    "pages/results/success/index",
+    "pages/reg/load1/index",
+    "pages/reg/load/index",
+    "pages/article/index",
+    "pages/qrcode/index",
+    "pages/web-view/index",
+    "pages/reg/loading/index",
+    "pages/news/index",
+    "pages/scan/index",
+    "components/card/index",
+    "pages/index/welfare/index/index"
+  ],
+  "window": {
+    "defaultTitle": "江西省终身学习电子卡",
+    "transparentTitle": "none"
+  },
+  "tabBar": {
+    "textColor": "#8A8A8A",
+    "selectedColor": "#3A64DB",
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "name": "首页",
+        "icon": "assets/index/tabBarIcon/icon1.png",
+        "activeIcon": "assets/index/tabBarIcon/icon1_blue.png"
+      },
+      {
+        "pagePath": "pages/application/all-application/index",
+        "name": "应用中心",
+        "icon": "assets/index/tabBarIcon/application.png",
+        "activeIcon": "assets/index/tabBarIcon/application_light.png"
+      },
+      {
+        "pagePath": "pages/card/index",
+        "name": "卡包",
+        "icon": "assets/index/tabBarIcon/card.png",
+        "activeIcon": "assets/index/tabBarIcon/card_blue.png"
+      },
+      {
+        "pagePath": "pages/me/me/index",
+        "name": "我的",
+        "icon": "assets/index/tabBarIcon/icon4.png",
+        "activeIcon": "assets/index/tabBarIcon/icon4_blue.png"
+      }
+    ]
+  }
+}

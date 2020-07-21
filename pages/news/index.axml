@@ -1,0 +1,19 @@
+<scroll-view scroll-y="{{true}}" onScrollToLower="scrollMytrip" class="schedule-scroll news-scroll">
+  <!--<view class="scrollView" a:for="{{list}}" data-form="{{item}}" onTap="getArticleDetail"><image class="images" mode="scaleToFill" src="{{item.image}}"/><view class="text">{{item.title}}</view></view> -->
+  <view class="scroll-item" a:for="{{list}}" data-form="{{item}}" onTap="getArticleDetails">
+    <view class="display">
+      <image class="scroll-image" mode="scaleToFill" src="{{item.image}}"/>
+    </view>
+    <view class="display">
+      <view class="news-title">{{item.title}}</view>
+    </view>
+    <view class="display" a:if="{{false}}">
+      <view class="news-scan">
+        <view>{{item.time}}</view>
+        <image class="hits" mode="scaleToFill" src="/assets/index/2.0/hits.png"/>
+        <view>{{item.hits}}</view>
+        <image class="share" mode="scaleToFill" src="/assets/index/2.0/share.png"/>
+      </view>
+    </view>
+  </view>
+</scroll-view>

@@ -1,0 +1,12 @@
+{
+  "defaultTitle": "个人中心",
+  "pullRefresh": "NO",
+  "usingComponents": {
+    "card": "mini-antui/es/card/index",
+    "collapse": "mini-antui/es/collapse/index",
+    "collapse-item": "mini-antui/es/collapse/collapse-item/index",
+    "list": "mini-antui/es/list/index",
+    "list-item": "mini-antui/es/list/list-item/index",
+    "card-components":"/components/card/index/index"
+  }
+}

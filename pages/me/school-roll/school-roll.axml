@@ -1,0 +1,94 @@
+<view class="content">
+  <view class="baseInfo">
+    <view class="line">
+      <view class="text-name">学籍号
+      </view>
+      <view class="text-value">{{userBaseInfo.studentId}}
+      </view>
+    </view>
+    <view class="line">
+      <view class="text-name">姓名
+      </view>
+      <view class="text-value">{{userBaseInfo.name}}
+      </view>
+    </view>
+    <view class="line">
+      <view class="text-name">性别
+      </view>
+      <view class="text-value">{{userBaseInfo.sex}}
+      </view>
+    </view>
+    <view class="line">
+      <view class="text-name">出生年月
+      </view>
+      <view class="text-value">{{userBaseInfo.birthDay}}
+      </view>
+    </view>
+    <view class="line">
+      <view class="text-name">民族
+      </view>
+      <view class="text-value">{{userBaseInfo.nation}}
+      </view>
+    </view>
+    <view class="line">
+      <view class="text-name">政治面貌
+      </view>
+      <view class="text-value">{{userBaseInfo.political}}
+      </view>
+    </view>
+    <view class="line">
+      <view class="text-name">联系电话
+      </view>
+      <view class="text-value">{{userBaseInfo.phone}}
+      </view>
+    </view>
+    <view class="line">
+      <view class="text-name">就读状态
+      </view>
+      <view class="text-value">{{userBaseInfo.status}}
+      </view>
+    </view>
+    <view class="line">
+      <view class="text-name">学校名称
+      </view>
+      <view class="text-value">{{userBaseInfo.schoolName}}
+      </view>
+    </view>
+    <view class="line">
+      <view class="text-name">层次
+      </view>
+      <view class="text-value">{{userBaseInfo.level}}
+      </view>
+    </view>
+    <view class="line">
+      <view class="text-name">年级
+      </view>
+      <view class="text-value">{{userBaseInfo.grade}}
+      </view>
+    </view>
+    <view class="line">
+      <view class="text-name">班级名称
+      </view>
+      <view class="text-value">{{userBaseInfo.className}}
+      </view>
+    </view>
+    <view class="line">
+      <view class="text-name">教育阶段
+      </view>
+      <view class="text-value">{{userBaseInfo.education}}
+      </view>
+    </view>
+    <view class="line">
+      <view class="text-name">学号
+      </view>
+      <view class="text-value">{{userBaseInfo.studentNo}}
+      </view>
+    </view>
+    <view class="line">
+      <view class="text-name">专业名称
+      </view>
+      <view class="text-value">{{userBaseInfo.professional}}
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,29 @@
+<view class="identity_select_bg">
+  <view a:if="{{openNotice}}" class="noticeMessage">
+    <notice mode="closable" onClick="closableClick" enableMarquee="{{true}}" marqueeProps="{{isLoop}}" show="{{closeShow}}">{{noticeContent}}</notice>
+  </view>
+  <view class="study_card_title">
+    <view>领取江西省</view>
+    <view>终身学习电子卡</view>
+  </view>
+  <view class="identity_select_box">
+    <view>
+      <image class="identity_select_image" mode="scaleToFill" src="/assets/identity/identity_select_image.png"/>
+    </view>
+    <form onSubmit="authToStudyCard" report-submit="{{true}}">
+      <view>
+        <button class="identity_select_button_box button_self" data-field="self" form-type="submit"></button>
+      </view>
+      <view>
+        <button class="identity_select_button_box button_instead" data-field="instead" form-type="submit"></button>
+      </view>
+    </form>
+    <view class="agreement_box">
+      <image mode="scaleToFill" src="{{checkSrc}}" data-field="{{checkSrc}}" onTap="checkChange"/>
+      <text onTap="redirctToAgreement">同意《江西省终身学习电子卡服务协议》</text>
+    </view>
+  </view>
+  <view class="help_center">
+    <contact-button tnt-inst-id="VNOJGFON" scene="SCE00041692" size="155rpx*50rpx" icon="/assets/index/2.0/help_center.png"/>
+  </view>
+</view>

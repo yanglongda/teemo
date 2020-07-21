@@ -1,0 +1,65 @@
+@import '../article/index.acss';
+.news-scroll {
+  height: 100vh;
+  width: 100vw;
+  right: 0;
+  left: 0;
+}
+
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.scroll-item {
+  height: 100vw;
+  height: 540rpx;
+  margin-top: 40rpx;
+  background: white
+}
+
+.scroll-image {
+  width: 696rpx;
+  height: 404rpx;
+  margin-top: 20rpx
+}
+
+.news-title {
+  width: 696rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  font-size: 34rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: rgba(59, 59, 59, 1);
+}
+
+.news-scan {
+  width: 696rpx;
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(167, 172, 178, 1);
+  position: relative;
+  height: 30rpx;
+}
+.news-scan  view{
+  height: 30rpx;
+  line-height: 35rpx
+}
+
+.hits{
+  height: 20rpx;
+  width: 29rpx;
+  margin:0 20rpx;
+}
+
+.share{
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  right: 0;
+}

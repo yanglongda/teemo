@@ -1,0 +1,54 @@
+<!-- <view class="pages">
+ <view class="successIcon">
+   <icon type="success" size="80" color="#2BD95F"/>
+   <view class="text">领卡成功</view>
+ </view>
+ <view class="card-blue card">
+   <image src="/assets/card/card-logo.png" class="cardLogo" />
+   <view class="text1">江西省终身学习电子卡</view>
+   <view class="text2">{{userInfo.name}}</view>
+   <view class="text3" a:for="{{identity}}">
+     {{item.name}}
+   </view>
+   <view class="text1 text4">终身学习账号：{{userInfo.studyId}}</view>
+ </view>
+ <view class="buttonStyle" onTap="backToIndex">确定</view>
+</view> -->
+<view>
+  <movable-area class="movable-area">
+    <!-- <movable-view x="{{300}}" y="{{350}}" a:if="{{showWelfare}}" direction="all" class="movable-view" onTap="redirctToWelfare">
+      <image class="getWelfare_btn" mode="widthFix" style="width: 100%;" src="/assets/index/2.0/icon_Welfare.png" onTap="redirctToGoal"/>
+    </movable-view> -->
+
+  <view class="success_image">
+    <view class="success_title">
+     <view class="text3">
+        领卡成功
+     </view>
+    </view>
+  </view>
+  <view class="success_title">
+    <view class="success_card">
+      <view class="ecard_title">
+        <image mode="scaleToFill" src="/assets/index/2.0/card_logo.png"/>
+        <view>江西省终身学习电子卡</view>
+      </view>
+      <view class="ecard_info success_title">
+        <view class="title">
+          <view class="text1">{{userType}}</view>
+          <view class="text2">{{EuserType}}</view>
+        </view>
+        <image mode="scaleToFill" src="/assets/index/2.0/identity_icon.png"/>
+      </view>
+    </view>
+  </view>
+  <view class="ecard_userInfo">
+    <view>{{userInfo.name}}</view>
+    <view a:for="{{userInfo.identityName}}">{{item.name}}</view>
+    <view>终身学习号：{{userInfo.studyId}}</view>
+  </view>
+  <button class="success_btn btn1" onTap="backToIndex">确认</button>
+  <button class="success_btn btn2"  a:if="{{false}}">补充身份</button>
+
+  </movable-area>
+</view>

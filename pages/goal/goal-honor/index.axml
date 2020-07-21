@@ -1,0 +1,11 @@
+<view>
+  <view class="goal-item">
+    <view class="goal-item-view">
+      <block a:for="{{honorList}}">
+        <view class="items honor_item" data-form="{{item}}" onTap="toHonorDetails">
+          <image class="honor_image {{!item.added?'honor-gray-pic':''}}" mode="scaleToFill" src="{{item.icon}}"/>
+          <view class="text honor_text">{{item.name}}</view>
+        </view>
+      </block>
+    </view>
+  </view>

@@ -1,0 +1,103 @@
+.display_center {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.index_card_box {
+  width: 100vw;
+  margin-top: 20rpx;
+  background: white
+}
+
+.noBg{
+  background: none
+}
+
+.index_card_box .card_bg {
+  width: 705rpx;
+  height: 288rpx;
+  position: relative;
+  background: url("/assets/index/2.0/user_card_bg.png") no-repeat 100% 100%;
+  background-size: contain;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  box-shadow:2px 4px 4px 0px rgba(52,95,217,0.41);
+  border-radius: 10rpx;
+}
+
+.index_card_box .card_bg .head_image {
+  height: 88rpx;
+  width: 88rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: 68rpx;
+  left: 69rpx
+}
+
+.index_card_box .card_bg .user_name {
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  position: absolute;
+  color: white;
+  top: 81rpx;
+  left: 173rpx
+}
+
+.index_card_box .card_bg .card_No {
+  position: absolute;
+  top: 180rpx;
+  left: 72rpx;
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1)
+}
+
+.index_card_box .card_bg .identity {
+  position: absolute;
+  top: 121rpx;
+  left: 170rpx;
+  display: flex;
+  width: 280rpx;
+  height: 40rpx;
+}
+
+.index_card_box .card_bg .identity .identity_box {
+  width: 94rpx;
+  height: 35rpx;
+  background: url("/assets/index/2.0/identity_box.png") no-repeat 100% 100%;
+  background-size: contain;
+  margin-right: 10rpx
+}
+
+.identity_name {
+  line-height: 40rpx;
+  color: white;
+  font-size: 22rpx;
+  margin-left: 34rpx
+}
+
+.qrcode {
+  position: absolute;
+  top: 85rpx;
+  right: 50rpx;
+}
+.scan{
+  right: 155rpx;
+}
+.qrcode image {
+  width: 77rpx;
+  height: 77rpx;
+}
+
+.qrcode .text {
+  font-size: 20rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: -10rpx;
+  margin-top: 10rpx;
+  text-align: center
+}

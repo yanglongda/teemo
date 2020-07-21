@@ -1,0 +1,5 @@
+<view>
+    <web-view id="web-view-1" src="{{webViewUrl}}" onMessage="onMessage"></web-view>
+    <!-- <web-view src="https://qr.alipay.com/cpx15069cngadjycn1euac4" /> -->
+    <!-- <web-view src="alipays://platformapi/startapp?appId=20000067&url=https%3A%2F%2Fqr.alipay.com%2Fcpx15069cngadjycn1euac4" /> -->
+</view>

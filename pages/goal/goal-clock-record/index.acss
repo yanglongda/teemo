@@ -1,0 +1,12 @@
+@import '../goal-details/index.acss';
+@import '../goal-clock/index.acss';
+.clock_record_bg{
+  height: auto !important
+}
+
+.canlendar_bg{
+  height: auto !important
+}
+.clock_list{
+  border-radius: 20rpx;
+}

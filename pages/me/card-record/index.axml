@@ -1,0 +1,37 @@
+<view class="content" >
+  <view class="btn_area" >
+    <view class="button large" onTap="getDate">
+      <view class="text">{{date==''?'全部':date}}</view>
+      <view class="tangle"></view>
+    </view>
+    <image mode="scaleToFill" src="/assets/me/close_icon.png" onTap="closeDateSelect"/>
+  </view>
+  <view class="card-record" a:if="{{!cardRecordIsNone}}">
+    <scroll-view scroll-y="{{true}}" onScrollToLower="scrollMytrip" class="schedule-scroll scroll">
+      <view>
+        <view class="card-line" a:for="{{list}}">
+        <view class="text1">
+          <view>{{item.logName}}</view>
+          <view class="num" a:if="{{item.orderAmount}}">{{item.orderAmount>0?'+':'-'}} {{item.orderAmount}}</view>
+        </view>
+        <view class="text2" a:if="{{item.appType=='order'}}">{{item.orderPayType}}</view>
+        <view class="text2" a:if="{{item.appType=='auth'}}">{{item.logDesc}}</view>
+        <view class="text2">{{item.createTime}}</view>
+      </view>
+      </view>
+      
+      <view class="spinner" style="{{show ? '' : 'display:none'}}">
+        <view class="bounce1 bounce"></view>
+        <view class="bounce2 bounce"></view>
+        <view class="bounce3 bounce"></view>
+        <view style="margin:20rpx 0 0 20rpx;color:#666666;">加载中...</view>
+      </view>
+     
+    </scroll-view>
+  </view>
+  <view a:if="{{cardRecordIsNone}}" class="error-page">
+    <image src="/assets/index/none-card-record.png" mode="aspectFit" />
+    <view class="no-record-text">暂无用卡记录
+    </view>
+  </view>
+</view>

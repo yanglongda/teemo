@@ -1,0 +1,54 @@
+<view class="content">
+  <!-- 个人信息页面 -->
+  <view class="baseInfo">
+    <view class="line">
+      <view class="text-name">头像</view>
+      <view class="text-value">
+        <image src="{{avatar}}" mode="aspectFit" class="headImage" />
+      </view>
+    </view>
+    <view class="line">
+      <view class="text-name">姓名</view>
+      <view class="text-value">{{studyUserInfo.name}}</view>
+    </view>
+    
+    <view class="line">
+      <view class="text-name">性别</view>
+      <view class="text-value">{{studyUserInfo.gender}}</view>
+    </view>
+    <view class="line">
+      <view class="text-name">手机号</view>
+      <view class="text-value">{{mobile}}</view>
+    </view>
+    <view class="line">
+      <view class=" non-line text-name">身份证号码</view>
+      <view class=" non-line text-value non-line">{{idCard}}</view>
+    </view>
+  </view>
+  <!-- 学校信息 -->
+  <view class="schoolInfo" a:if="{{isSchoolInfo}}">
+    <view class="line">
+      <view class="text-name">学校</view>
+      <view class="text-value">111</view>
+    </view>
+    <view class="line">
+      <view class="text-name">学届</view>
+      <view class="text-value">111</view>
+    </view>
+    <view class="line">
+      <view class="non-line text-name">班级</view>
+      <view class="non-line text-value">111</view>
+    </view>
+  </view>
+  <!-- 第三方 -->
+  <view class="schoolInfo">
+    <view class="line">
+      <view class="text-name">终身学习账号</view>
+      <view class="text-value">{{studyUserInfo.studyId}}</view>
+    </view>
+    <view class="line">
+      <view class="non-line text-name">赣教云</view>
+      <view class="non-line text-value">{{studyUserInfo.jxeduId}}</view>
+    </view>
+  </view>
+</view>

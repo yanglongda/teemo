@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "应用中心",
+  "usingComponents": {
+    "tabs": "mini-antui/es/tabs/index",
+    "tab-content": "mini-antui/es/tabs/tab-content/index",
+    "grid": "mini-antui/es/grid/index"
+  }
+}

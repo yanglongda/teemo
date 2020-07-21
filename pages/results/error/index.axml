@@ -1,0 +1,13 @@
+<view class="error-page" a:if="{{!isBinding}}">
+  <image src="/assets/index/server-error.png" mode="aspectFit" />
+  <view class="text">系统繁忙</view>
+  <view class="text1">{{errorInfo}}</view>
+  <view class="btn" onTap="submitAgain">返回首页</view>
+</view>
+
+<view class="error-page" a:if="{{isBinding}}">
+  <image src="/assets/index/server-error.png" mode="aspectFit" />
+  <view class="text">绑定失败</view>
+  <view class="text1">{{errorInfo}}</view>
+  <view class="btn" onTap="submitAgain">返回首页</view>
+</view>

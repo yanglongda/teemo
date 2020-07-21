@@ -1,0 +1,36 @@
+<view class="application-tabs">
+  <tabs tabs="{{applicationList}}" swipeable="{{false}}" tabBarUnderlineColor="#3963DA" tabBarActiveTextColor="#3963DA" tabBarInactiveTextColor="#545454" activeTab="{{applicationActive}}" onTabClick="handleTabClick" onChange="handleTabChange">
+    <block a:for="{{applicationList}}">
+      <tab-content activeTab="{{applicationActive}}" class="applicationList_{{applicationActive}}">
+        <view class="pos" a:for="{{item.applicationDtoList}}">
+          <view class="schoolName" a:if="{{item.schoolName}}"><view style="margin-left:13rpx">{{item.schoolName}}</view></view>
+          <view class="application-area" a:for="{{item.applicationTypeList}}">
+            <!-- 轮播图显示 -->
+            <view class="application application1 " a:if="{{item.type == 'banner'}}">
+              <swiper indicator-dots="{{true}}" >
+                <block a:for="{{item.applicationList}}">
+                  <swiper-item >
+                    <image mode="scaleToFill" src="{{item.appIcon}}" data-item="{{item}}" onTap="onAppItemClick" style="width:100%;height:345rpx"/>
+                  </swiper-item>
+                </block>
+              </swiper>
+            </view>
+            <!-- grid显示 -->
+            <view class="application" a:if="{{item.type == 'icon'}}">
+              <view class="title">{{item.name}}</view>
+              <view class="grid" >
+                <view class="grid_item" a:for="{{item.applicationList}}" data-item="{{item}}" onTap="onAppItemClick">
+                  <view>
+                    <image mode="scaleToFill" src="{{item.icon}}"/>
+                  </view>
+                  <view class="text">{{item.text}}</view>
+                </view>
+              </view>
+            </view>
+            
+          </view>
+        </view>
+      </tab-content>
+    </block>
+  </tabs>
+</view>

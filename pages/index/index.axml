@@ -1,0 +1,52 @@
+<view class="loading" a:if="{{indexFlag === 0}}">
+  <image src="/assets/index/2.0/loading_gif.gif" mode="aspectFit" />
+</view>
+<view class="index_bg" a:if="{{indexFlag === 1}}">
+  <movable-area class="movable-area">
+    <movable-view x="{{306}}" y="{{400}}" class="little-goal" direction="all">
+      <image a:if="{{indexFlag === 1}}" class="little-goal" mode="scaleToFill" src="/assets/index/goal.png" onTap="redirctToGoal"/>
+    </movable-view>
+    <card-components qrcode="{{true}}" pages="index" defaultUserInfo="{{defaultUserInfo}}"/>
+    <view a:if="{{openNotice}}" class="notice_message">
+      <notice mode="closable" onClick="onModalClose" enableMarquee="{{true}}" marqueeProps="{{isLoop}}" show="{{closeShow}}">{{noticeContent}}</notice>
+    </view>
+    <view class="common_application" a:if="{{commonUsedApplication.length>0}}">
+      <grid columnNum="{{4}}" list="{{commonUsedApplication}}" onGridItemClick="onCommonUsedItemClick"/>
+    </view>
+    <view class="banner_app" a:if="{{bannerApplication.length>0}}">
+      <swiper indicator-dots="true" autoplay="true" duration="500" interval="3000" circular="{{true}}" onChange="bannerChange">
+        <block a:for="{{bannerApplication}}">
+          <swiper-item key="swiper-item-{{index}}">
+            <image mode="aspectFill" src="{{item.appIcon}}" data-item="{{item}}" onTap="onBannerItemClick" />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="news_box" a:if="{{article.type}}">
+      <view class="news_title_box">
+        <view class="title">{{article.type}}</view>
+        <image mode="scaleToFill" src="/assets/index/2.0/more.png" data-field="{{article.type}}" onTap="redirctToNews"/>
+      </view>
+      <view class="news_content_box" data-form="{{article}}" onTap="getArticleDetails">
+        <view class="details">
+          <view>{{article.title}}</view>
+          <view class="text1">{{article.createTime}}</view>
+        </view>
+        <image mode="scaleToFill" src="{{article.image}}"/>
+      </view>
+    </view>
+    <favorite a:if="{{canIUse}}" type='tips' bottom="8rpx">收藏小程序，下次使用更方便</favorite>
+  </movable-area>
+
+  <!--领取福利弹窗--> 
+  <z-modal
+    show="{{modalShowWelfare}}"
+		advice="{{true}}"
+    onModalClose="onModalCloseWelfare"
+  >
+    <view className="operation-modal" style="width: 263px; height: 479px;">
+        <image mode="widthFix" style="width: 100%;" src="/assets/index/2.0/indexModal.png" />
+        <view  className="zModalFooter" onTap="redirctToWelfare"></view>
+    </view>
+  </z-modal>
+</view>

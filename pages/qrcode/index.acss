@@ -1,0 +1,86 @@
+.qrcode {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#537EF8, #3964DB);
+}
+
+.qrcode_box {
+  width: 84vw;
+  height: 760rpx;
+  border-radius: 10rpx;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 1);
+  position: relative;
+  top: 25vh;
+  text-align: center
+}
+
+.qrcode_box image {
+  height: 160rpx;
+  width: 160rpx;
+  border-radius: 50%;
+  position: relative;
+  top: -80rpx;
+}
+
+.qrcode_box .name {
+  font-size: 40rpx;
+  height: 46rpx;
+  font-weight: bold;
+  position: relative;
+  top: -60rpx;
+}
+
+.qrcode_box .studyNo {
+  font-size: 30rpx;
+  height: 34rpx;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  position: relative;
+  top: -40rpx
+}
+
+.qrcode_box .code {
+  width: 360rpx;
+  height: 360rpx;
+}
+
+.qrcode_box .tips {
+  margin: 30rpx auto;
+}
+
+.tips .tips1 {
+  font-size: 24rpx;
+  color: rgba(153, 153, 153, 1);
+  font-weight: 400;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center
+}
+
+/* .tips .image {
+  height: 40rpx;
+  width: 40rpx;
+  background-image: url("assets/index/refresh.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 5rpx
+}
+
+.tips .tips2 {
+  font-size: 24rpx;
+  color: #589CFA;
+  font-weight: 400;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.tips3{
+  display: flex
+} */
+
+.canvas{
+  width:180px;
+  height:180px;
+  margin:0 auto
+}

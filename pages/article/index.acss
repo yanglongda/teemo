@@ -1,0 +1,115 @@
+@import '../me/point-details/index.acss';
+.article_box {
+  width: 92vw;
+  position: relative;
+  left: 4vw;
+}
+
+.article_swiper {
+  height: 500rpx;
+  box-shadow: 0px 1px 3px rgba(74, 148, 255, 0.16);
+  border-radius: 20rpx;
+  margin-top: 30rpx;
+  background: rgba(255, 255, 255, 1);
+}
+
+.article_swiper .image {
+  width: 100%;
+  height: 400rpx;
+}
+
+.article_swiper .text {
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.article_swiper .decration {
+  line-height: 100rpx
+}
+
+.article_swiper .title {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0 auto;
+}
+
+.bannerDots {
+  width: 100%;
+  margin-top: 10rpx;
+}
+
+.dots {
+  width: 20rpx;
+  height: 20rpx;
+  background: rgba(204, 204, 204, 1);
+  opacity: 1;
+  margin: 0 10rpx;
+  border-radius: 20rpx;
+}
+
+.dots.active {
+  width: 20rpx;
+  background-color: #377AFF;
+}
+
+.flex_c {
+  /* 水平居中*/
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 350rpx
+}
+
+.scrollView {
+  width: 92vw;
+  height: 204rpx;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 1px 3px rgba(74, 148, 255, 0.16);
+  border-radius: 10px;
+  margin-top: 20rpx;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.scrollView .images {
+  width: 260rpx;
+  height: 144rpx;
+  margin: 0 30rpx;
+  border-radius: 20rpx
+}
+
+.scrollView .text {
+  width: 380rpx;
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  margin-right: 30rpx;
+  line-height: 40rpx;
+  height: 80rpx;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.scroll-view {
+  height: calc(100vh - 560rpx);
+  margin-top: 10rpx;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  left: 0
+}

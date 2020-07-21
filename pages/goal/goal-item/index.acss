@@ -1,0 +1,49 @@
+.goal-item {
+  width: 92vw;
+  height: calc(100vh - 40rpx);
+  position: relative;
+  top: 20rpx;
+  left: 4vw;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 3px 6px rgba(74, 148, 255, 0.1);
+  opacity: 1;
+  border-radius: 10px;
+}
+
+.goal-item-view {
+  padding-top: 30rpx;
+  text-align: justify
+}
+
+.goal-item-view .items {
+  width: 340rpx;
+  height: 260rpx;
+  position: relative;
+  display: inline-block
+}
+
+.goal-item-view image {
+  height: 180rpx;
+  width: 180rpx;
+  position: absolute;
+  left: 82rpx;
+}
+
+.goal-item-view .text {
+  width: 340rpx;
+  text-align: center;
+  position: absolute;
+  bottom: 20rpx;
+  font-size: 16px;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: rgba(51, 51, 51, 1)
+}
+
+.goal-item-view .addIcon{
+  width:48rpx;
+  height: 48rpx;
+  position: absolute;
+  left: 150rpx;
+  top:132rpx;
+}

@@ -1,0 +1,11 @@
+{
+ "defaultTitle": "江西省终身学习电子卡",
+  "usingComponents":{
+     "grid": "mini-antui/es/grid/index",
+     "modal": "mini-antui/es/modal/index",
+     "notice": "mini-antui/es/notice/index",
+     "tips-dialog": "mini-antui/es/tips/tips-dialog/index",
+     "card-components":"/components/card/index/index",
+     "z-modal":"/components/zModal/index"
+  }
+}

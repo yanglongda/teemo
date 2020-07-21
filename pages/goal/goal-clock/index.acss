@@ -1,0 +1,207 @@
+@import '../goal-details/index.acss';
+.clock_bg {
+  height: auto !important
+}
+
+.days_tag {
+  width: 108rpx;
+  height: 160rpx;
+  position: absolute;
+  left: 40rpx;
+  top: 0
+}
+
+.canlendar_bg {
+  width: 92vw;
+  height: auto;
+  margin-top: 20rpx;
+  margin-left: 4vw;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 3px 6px rgba(74, 148, 255, 0.1);
+  opacity: 1;
+  border-radius: 20rpx;
+}
+
+.canlendar_con {
+  margin: 20rpx;
+}
+
+.clock_modal {
+  position: relative;
+}
+
+.clock_modal .image {
+  width: 180rpx;
+  height: 180rpx;
+  margin-top: 100rpx
+}
+
+.clock_modal .list_modal {
+  margin: 60rpx 0 60rpx 20rpx;
+  width: 450rpx;
+  height: 250rpx;
+  border-top: 1px solid rgba(238, 238, 238, 1)
+}
+
+.button1 {
+  width: 440rpx !important;
+  margin:106rpx 0 40rpx 126rpx !important
+}
+
+.success_view {
+  width: 350rpx;
+  height: 80rpx;
+  margin: 40rpx 0 0 50rpx;
+  position: relative
+}
+
+.insist_days {
+  width: 44px;
+  height: 16px;
+  font-size: 11px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  position: absolute;
+  top:20rpx;
+  left: 50rpx;
+}
+
+.insist_days_num {
+  width: 108rpx;
+  height: 37px;
+  font-size: 26px;
+  text-align: center;
+  font-family: PingFang SC;
+  font-weight: 400;
+  line-height: 37px;
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  position: absolute;
+  left: 40rpx;
+  top: 56rpx;
+}
+
+.success_view image {
+  height: 80rpx;
+  width: 80rpx;
+  position: absolute;
+  left: 0;
+  top: 0
+}
+
+.success_view .text1 {
+  height: 80rpx;
+  line-height: 80rpx;
+  position: absolute;
+  top: 0;
+  left: 100rpx
+}
+
+.success_view .text2 {
+  height: 80rpx;
+  line-height: 80rpx;
+  position: absolute;
+  top: 0;
+  right: 0
+}
+
+.canlendar_con .am-list-line {
+  padding-right: 0
+}
+
+/* 获得勋章的模态框 */
+
+.honor_modal {
+  width: 100vw;
+  text-align: center;
+  position: absolute;
+  height: 760rpx;
+  z-index: 10
+}
+
+ .honor_modal .image {
+  width: 600rpx;
+  height: 760rpx;
+  z-index: 999;
+  background: url("/assets/goal/honor1.png");
+  background-size: contain
+}
+
+.medal_modal .am-modal {
+  width: 100vw;
+  height: 820rpx;
+  background: none
+}
+
+.medal_modal .am-modal-close {
+  top: -160rpx
+}
+
+.medal_modal .am-modal-body {
+  padding: 0
+}
+
+.get_honor_text {
+  width: 100vw;
+  text-align: center;
+  height: 48rpx;
+  font-size: 34rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  line-height: 48rpx;
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  position: absolute;
+  top: -80rpx;
+}
+
+.honor_text2 {
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  line-height: 42rpx;
+  color: rgba(255, 255, 255, 1);
+  top: 820rpx;
+}
+
+.medal {
+  position: relative
+}
+
+.medal_icon {
+  height: 362rpx;
+  width: 320rpx;
+  z-index: 20;
+  position: absolute;
+  left: 140rpx;
+  top: 120rpx;
+}
+
+.medal_remark {
+  width:600rpx;
+  text-align: center;
+  z-index: 20;
+  position: absolute;
+  color: white;
+  font-size: 34px;
+  font-family: PingFang SC;
+  font-weight: bold;
+  top: 560rpx
+}
+
+.blank{
+  margin-top:64rpx
+}
+
+
+.bg_height{
+  height: 540rpx;
+  position: relative
+}
+
+.button2{
+  margin: 106rpx 0 40rpx 206rpx !important
+}

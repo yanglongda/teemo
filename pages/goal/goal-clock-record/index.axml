@@ -1,0 +1,18 @@
+<view>
+  <view class="goal-details clock_record_bg">
+    <calendar tagData="{{tagData}}" onMonthChange="onMonthChange" onSelect="onSelect" type="single"/>
+  </view>
+  <view class="canlendar_bg">
+    <list class="clock_list">
+      <list-item onClick="redirectToClockRecord">累计打卡天数
+        <view slot="extra">{{totalCount}}天</view>
+      </list-item>
+      <list-item onClick="redirectToClockRecord">本月打卡天数
+        <view slot="extra">{{monthCount}}天</view>
+      </list-item>
+      <list-item onClick="redirectToClockRecord">最长连续打卡天数
+        <view slot="extra">{{maxTotalize}}天</view>
+      </list-item>
+    </list>
+  </view>
+</view>

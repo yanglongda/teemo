@@ -1,0 +1,6 @@
+<view class="error-page">
+  <image src="/assets/index/error-page.png" mode="aspectFit" />
+  <view class="text1 subText">您尚未领取<text class="subText1">{{message}}</text>的终身学习电子卡</view>
+  <view class="text1">请领卡成功后再次扫一扫绑定赣教云账号</view>
+  <view class="btn" onTap="submitAgain">立即领卡</view>
+</view>

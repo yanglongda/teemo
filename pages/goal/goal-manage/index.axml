@@ -1,0 +1,19 @@
+<view>
+  <!-- <view class="manage_tips">
+    <view>删除目标后将清除所有目标数据</view>
+  </view> -->
+  <view class="manage_goals" a:if="{{goalList.length > 0}}">
+    <list>
+      <block a:for="{{goalList}}">
+        <list-item thumb="{{item.icon}}" data-form="{{item}}">{{item.name}}
+          <view slot="extra" data-form="{{item}}" onTap="deleteGoals">
+						删除
+         </view>
+        </list-item>
+      </block>
+    </list>
+  </view>
+  <view a:if="{{goalList.length == 0}}">
+    <view class="none-goal-text manage_goals">什么都没有，快去添加小目标吧~</view>
+  </view>
+</view>

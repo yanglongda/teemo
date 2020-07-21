@@ -1,0 +1,34 @@
+<!-- 确认并授权页面 -->
+<view class="auth-page">
+  <view class="auth-info">
+    <view class="auth-info-title">学生信息
+    </view>
+    <list>
+      <input-item name="studentName" data-field="studentName" placeholder="请输入学生真实姓名" value="{{studentName}}" onInput="setName">姓名          
+      </input-item>
+      <input-item name="studentIdCard" data-field="studentIdCard" maxlength='18' placeholder="请输入学生身份证号" onInput="setIdCard" value="{{studentIdCard}}">身份证          
+      </input-item>
+    </list>
+    <view class="auth-info-title">监护人信息
+    </view>
+    <list>
+      <picker a:if="{{false}}" class="row_picker" onChange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="row">
+        <view class="row-title">{{array[index]}}</view>
+        
+        <image class="row-arrow" src="/assets/index/2.0/arrow_down.png" mode="aspectFill" />
+      </view>
+      </picker>
+
+      <input-item class="bagroundColor" name="name" data-field="name" value="{{hiddenInfo.name}}" disabled="true" placeholder="请输入家长真实姓名">姓名          
+      </input-item>
+      <input-item class="bagroundColor" name="idCard" data-field="idCard" maxlength='18'  type='idcard' placeholder="请输入家长身份证号" value="{{hiddenInfo.idCard}}" disabled="true">身份证          
+      </input-item>
+      <input-item class="bagroundColor" name="mobile" data-field="mobile" maxlength='11'  placeholder="请输入家长手机号码" value="{{hiddenInfo.mobile}}" disabled="true">手机号          
+      </input-item>
+    </list>
+  </view>
+  <!-- <button class="auth-btn" disabled="{{disabled}}" onTap="formSubmits">下一步</button> -->
+  <view class="auth-btn" onTap="formSubmits">下一步  
+  </view>
+</view>

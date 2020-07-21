@@ -1,0 +1,257 @@
+@import '../collar-card/identity-select/index.acss';
+@import '../index/index.acss';
+.content {
+  width: 698rpx;
+  margin: 0 auto;
+}
+
+/* 蓝色卡 */
+
+.card-blue {
+  height: 330rpx;
+  width: 698rpx;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  background: url('/assets/card/card_blue.png') no-repeat;
+  background-size: cover;
+  box-shadow: 2px 4px 4px 0px rgba(52, 95, 217, 0.41);
+  position: relative
+}
+
+.default-card {
+  width: 126rpx;
+  height: 126rpx;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url("/assets/card/default_card.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat
+}
+
+/*黄色卡 */
+
+.card-red {
+  height: 330rpx;
+  width: 698rpx;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  background: url('/assets/card/card_yellow.png') no-repeat;
+  background-size: cover;
+  box-shadow: 2px 4px 4px 0px rgba(52, 95, 217, 0.41);
+  position: relative
+}
+
+/* 灰色代领卡 */
+
+.card-gray {
+  height: 160rpx;
+  width: 698rpx;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  background: #3964DB;
+  position: relative;
+  box-shadow: 2px 4px 4px 0px rgba(52, 95, 217, 0.41);
+}
+
+/* 透明logo */
+
+.card-logo {
+  width: 80px;
+  height: 80px;
+  background-size: contain;
+  position: relative;
+  right: 50px;
+  top: 30px;
+  left: 52vw;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+/* 底部操作按钮 */
+
+.opacity {
+  height: 0.6rem;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(10, 10, 10, 0.2);
+  border-radius: 0 0 10rpx 10rpx;
+  left: 0;
+  right: 0;
+  display: flex;
+  color: white
+}
+
+.opacity .text1 {
+  width: 50vw;
+  text-align: center;
+  margin: 10rpx 0;
+  font-size: 26rpx;
+  line-height: 42rpx;
+}
+
+.opacity .text1Display {
+  width: 100vw;
+  text-align: center;
+  margin: 10rpx 0;
+  font-size: 26rpx;
+  line-height: 42rpx;
+}
+
+.opacity .text2 {
+  width: 50vw;
+  text-align: center;
+  margin: 10rpx 0;
+  font-size: 26rpx;
+  line-height: 42rpx;
+  border-left: 1px solid #8e9eab
+}
+
+.opacity .text2Display {
+  width: 0;
+  text-align: center;
+  margin: 10rpx 0;
+  font-size: 26rpx;
+  line-height: 42rpx;
+  border-left: 1px solid #8e9eab
+}
+
+/* 用户登录信息以及头像 */
+
+.card_head_image {
+  height: 88rpx;
+  width: 88rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: 68rpx;
+  left: 69rpx
+}
+
+.card_user_name {
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  position: absolute;
+  color: white;
+  top: 81rpx;
+  left: 173rpx
+}
+
+.card_card_No {
+  position: absolute;
+  top: 200rpx;
+  left: 72rpx;
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1)
+}
+
+.card_identity {
+  position: absolute;
+  top: 121rpx;
+  left: 170rpx;
+  display: flex;
+  width: 320rpx;
+  height: 40rpx;
+}
+
+.card_identity_box {
+  width: 94rpx;
+  height: 35rpx;
+  background: url("/assets/index/2.0/identity_box.png") no-repeat 100% 100%;
+  background-size: contain;
+  margin-right: 10rpx
+}
+
+.card_identity_box_yellow {
+  width: 94rpx;
+  height: 35rpx;
+  background: url("/assets/card/identity_yellow.png") no-repeat 100% 100%;
+  background-size: contain;
+}
+
+.card_identity_name {
+  line-height: 40rpx;
+  color: white;
+  font-size: 22rpx;
+  margin-left: 34rpx
+}
+
+/* 用户身份 */
+
+.userIndentity {
+  width: 60vw;
+  margin: 0px auto;
+  position: absolute;
+  top: 140rpx;
+  height: 80rpx;
+  left: 20vw;
+  color: white;
+  font-size: 24rpx;
+}
+
+.userIndentity view {
+  margin-top: 10rpx
+}
+
+.userInfo .arrow {
+  height: 40rpx;
+  width: 40rpx;
+  border-radius: 0;
+  border: none;
+  margin-top: 20rpx;
+}
+
+.card-gray .add_icon {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  left: 216rpx;
+  top: 60rpx
+}
+
+.card-gray .add_card {
+  font-size: 16px;
+  font-family: PingFang SC;
+  font-weight: bold;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 58rpx;
+  left: 296rpx;
+}
+
+.card-tips-box {
+  position: relative;
+  margin-top: 20rpx;
+  width: 90vw;
+  height: 96rpx;
+  background: url("/assets/card/card_tips_box.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 12px;
+  font-family: PingFang SC;
+  line-height: 112rpx;
+  font-weight: bold;
+  color: rgba(57, 99, 218, 1)
+}
+
+.card-tips-box .text1 {
+  margin-left: 30rpx
+}
+
+.card-tips-box .btn {
+  position: absolute;
+  right: 40rpx;
+  top: 32rpx;
+  border-radius: 4px;
+  font-size: 10px;
+  font-family: PingFang SC;
+  font-weight: bold;
+  line-height: 50rpx;
+  border: none;
+  width: 119rpx;
+  height: 49rpx;
+  background: rgba(57, 99, 218, 1);
+}

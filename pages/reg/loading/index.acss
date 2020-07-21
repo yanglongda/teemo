@@ -1,0 +1,45 @@
+@import '../load/index.acss';
+@import '../../collar-card/identity-select/index.acss';
+.am-modal-mask {
+  background-color: rgba(0, 0, 0, 0.55)
+}
+
+.titles {
+  width: 100vw;
+  text-align: center;
+  color: white;
+  top: 400rpx;
+  z-index: 999;
+  font-size: 36rpx;
+  position: absolute;
+}
+
+.footer {
+  margin-top: 12px;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  font-size: 18px;
+  color: rgb(16, 142, 233);
+  text-align: center;
+}
+
+.footer1:hover{
+  background: #f8f8f8;
+  border-radius: 0 0 0 20rpx
+}
+
+.footer2:hover{
+  background:#f8f8f8;
+  border-radius: 0 0 20rpx 0
+}
+.am-modal-body{
+  padding: 0;
+  margin: 0;
+  max-width: none
+}
+
+.heads{
+  max-width: 540rpx;
+  margin:50rpx auto
+}

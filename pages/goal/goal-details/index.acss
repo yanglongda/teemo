@@ -1,0 +1,86 @@
+
+.goal-details {
+  width: 92vw;
+  height: calc(100vh - 120rpx);
+  margin-top: 20rpx;
+  margin-left: 4vw;
+  padding-bottom: 60rpx;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 3px 6px rgba(74, 148, 255, 0.1);
+  opacity: 1;
+  border-radius: 20rpx;
+}
+
+.goal-details .bg {
+  height: 440rpx;
+  position: relative;
+  /* background: linear-gradient(180deg, rgba(94, 174, 250, 1) 0%, rgba(81, 134, 250, 1) 100%);
+  box-shadow: 0px 3px 6px rgba(74, 148, 255, 0.16) */
+}
+
+
+
+.goal-details  .img {
+  height: 180rpx;
+  width: 180rpx;
+  position: absolute;
+  top: 116rpx;
+  left: 256rpx;
+}
+
+.goal-details .text {
+  width: 92vw;
+  text-align: center;
+  position: absolute;
+  bottom: 70rpx;
+  font-size: 20px;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: rgba(81, 136, 250, 1);
+  opacity: 1;
+}
+
+.goal-details .introduce {
+  width: 92vw;
+  text-align: center;
+  font-size: 36rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: rgba(81, 136, 250, 1);
+  opacity: 1;
+}
+
+.goal-details .description {
+  width: 602rpx;
+  margin: 0 auto;
+  font-size: 14px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+  opacity: 1;
+  margin-top: 60rpx;
+  line-height:40rpx;
+}
+
+.btn-bg{
+ background: linear-gradient(270deg, rgba(95, 177, 250, 1) 0%, rgba(81, 134, 250, 1) 100%);
+}
+
+.btn-bg-gray{
+  background:rgba(221,221,221,1)
+}
+
+.goal-details .btn{
+  width: 280rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  opacity: 1;
+  border-radius: 50rpx;
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  /* margin-left: 206rpx;
+  margin-top:66rpx; */
+  margin: 66rpx 0 0 206rpx
+}

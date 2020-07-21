@@ -1,0 +1,33 @@
+.confrim_box {
+  background: #f4f3f9;
+  width: 100vw;
+  height: 100vh;
+}
+
+.confrim_box .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+}
+
+.confrim_box .content image {
+  width: 292rpx;
+  height: 282rpx;
+  margin-top: 200rpx
+}
+
+.confrim_box .content button {
+  margin-top: 40rpx;
+  border-radius: 10rpx;
+  width: 688rpx;
+  height: 94rpx;
+  background: rgba(58, 100, 219, 1);
+}
+
+.btn1 {
+  color: rgba(58,100,219,1);
+  border: 1px solid rgba(58, 100, 219, 1) !important;
+}

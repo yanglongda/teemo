@@ -1,0 +1,23 @@
+@import '../goal-item/index.acss';
+
+.honor_item{
+  width: 230rpx !important;
+}
+
+.honor_image{
+  width: 160rpx !important;
+  left: 40rpx !important;
+}
+
+.honor_text{
+   width: 230rpx !important;
+}
+
+.honor-gray-pic {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+}

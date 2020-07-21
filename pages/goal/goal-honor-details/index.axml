@@ -1,0 +1,21 @@
+<view>
+  <view class="goal-item goal-honor-details">
+    <swiper style="text-align:center" duration="500" interval="3000" circular="{{false}}" previous-margin="55px" next-margin="55px" onChange="bannerChange">
+      <block a:for="{{honorItemList}}">
+        <swiper-item key="swiper-item-{{index}}">
+          <view class="banner {{ currentIndex==index?'active':''}} {{!item.added?'honor-gray-pic':''}} image ">
+            <image mode="scaleToFill" src="{{item.icon}}"/>
+            <view class="goal-item-honor-text">{{item.name}}</view>
+            <view class="goal-item-honor-text goal-item-honor-text1">{{item.remark}}</view>
+            
+          </view>
+          <!--<image class="banner {{ currentIndex==index?'active':''}} {{!item.added?'honor-gray-pic':''}} " src="{{item.icon}}" data-item="{{item}}" mode="aspectFill" /> -->
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="bannerDots flex_c">
+      <!-- <view class="dots {{ currentIndex==index?'active':''}}" a:for="{{honorItemList}}"></view> -->
+      <view class="goal-item-honor-text goal-item-honor-text3">{{percent}}</view>
+    </view>
+  </view>
+</view>

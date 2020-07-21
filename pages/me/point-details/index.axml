@@ -1,0 +1,34 @@
+<view >
+  <view class="point_details_bg">
+    <view class="total_score">
+      <image class="total_score_image" mode="scaleToFill" src="/assets/goal/score_icon.png"/>
+      <text class="text2">{{totalScore}}</text>
+      <text class="text1">分</text>
+    </view>
+    <view class="get_score_btn" onTap="redirectToGoal">获取学习值</view>
+  </view>
+  <view class="schedule-container">
+    <view class="content">
+      <view class="point_record">学习值获取记录</view>
+      <scroll-view scroll-y="{{true}}" onScrollToLower="scrollMytrip" class="schedule-scroll">
+        <list a:if="{{list.length > 0}}">
+          <list-item arrow="{{false}}" a:for="{{list}}">{{item.changeDesc}}
+            <view class="am-list-brief brief">{{item.createTime}}</view>
+            <view class="extra" slot="extra">
+              <image style="height:30px;width:30px;margin-right:5px" mode="scaleToFill" src="/assets/goal/score_icon.png"/>
+              <text>{{item.changePoint > 0?'+':''}} {{item.changePoint}}</text>
+            </view>
+          </list-item>
+        </list>
+        <view class="no_data" a:if="{{list.length == 0}}">暂时没有获取记录哦~</view>
+        <view class="spinner" style="{{show ? '' : 'display:none'}}">
+          <view class="bounce1 bounce"></view>
+          <view class="bounce2 bounce"></view>
+          <view class="bounce3 bounce"></view>
+          <view style="margin:20rpx 0 0 20rpx;color:#666666;">加载中...</view>
+        </view>
+        </view>
+      </scroll-view>
+    </view>
+    
+  </view>

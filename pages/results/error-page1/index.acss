@@ -1,0 +1,13 @@
+@import '../error-page/index.acss';
+
+.subText{
+  font-size: 30rpx !important;
+  font-weight: bold !important;
+  color:black !important
+}
+
+.subText1{
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #3B68DB
+}

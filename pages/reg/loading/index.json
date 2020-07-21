@@ -1,0 +1,7 @@
+{
+  "transparentTitle": "always",
+  "allowsBounceVertical":"YES",
+  "usingComponents": {
+    "modal": "mini-antui/es/modal/index"
+  }
+}

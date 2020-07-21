@@ -1,0 +1,40 @@
+<view class="error-page">
+  <image src="/assets/index/error-page.png" mode="aspectFit" />
+  <view a:if="{{!isSubCode}}">
+    <view class="text">领卡失败</view>
+    <view class="text1">{{message}}</view>
+    <view class="text3" hidden="{{hidden}}">
+    联系客服
+      <view class="text5">?</view>
+    </view>
+    <view class="btn" onTap="submitAgain">重新提交</view>
+  </view>
+  <view a:if="{{isSubCode}}">
+    <view class="otherText">孩子信息</view>
+    <view class="otherText">与学校预留信息不符</view>
+    <view class="details">
+      <view class="tips_box">小提示</view>
+      <view class="detailText">
+        <view class="detailText1">
+          <image mode="scaleToFill"  src="/assets/index/num1.png"/>
+        </view>
+        <view class="detailText2">
+          家长代领卡功能要求领卡人与学籍系统预 留的监护人信息对应，如有疑问请
+          <text>联系就读学校学籍管理人员</text>，进行
+          <text>学籍信息核实并更新。</text>
+        </view>
+      </view>
+      <view class="detailText">
+        <view class="detailText1">
+          <image mode="scaleToFill"  src="/assets/index/num2.png"/>
+        </view>
+        <view class="detailText2">
+          如果学生由于学校放假无法更新学籍的，可在开学后联系学校更新学籍，再领卡，领卡功能持续开放。
+        </view>
+      </view>
+    </view>
+    <view class="helpCenter">
+       <contact-button tnt-inst-id="VNOJGFON" scene="SCE00041692" size="155rpx*50rpx" icon="/assets/index/2.0/help_center.png"/>
+      </view>
+  </view>
+</view>

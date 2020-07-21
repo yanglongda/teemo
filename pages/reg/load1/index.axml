@@ -1,0 +1,3 @@
+<view class="loading">
+    <image src="/assets/index/2.0/loading_gif.gif" mode="aspectFit" />
+</view>

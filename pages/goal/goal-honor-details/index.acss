@@ -1,0 +1,81 @@
+@import '../goal-item/index.acss';
+@import '../../index/index.acss';
+.goal-honor-details {
+  padding-top: 20vh;
+  height: calc(100vh -  (20vh + 40rpx));
+}
+
+.goal-item .image {
+  height: 650rpx;
+  width: 360rpx;
+  margin: 0 auto;
+  position: relative
+}
+.goal-item .image image{
+  height: 362rpx;
+  width: 320rpx;
+  margin: 0 auto
+}
+
+.goal-item-honor-text {
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 40rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: rgba(51, 51, 51, 1);
+  margin-top:80rpx;
+}
+
+.goal-item-honor-text1 {
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  margin-bottom: 40rpx;
+  margin-top: 0;
+}
+
+.goal-item-honor-text3{
+  width: 690rpx;
+  text-align: center;
+  position: absolute;
+  bottom:10vh;
+  color: rgba(153, 153, 153, 1);
+  font-size: 28rpx;
+}
+
+/* 图片置灰 */
+
+.honor-gray-pic {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+}
+
+.dots {
+  width: 20rpx;
+  height: 20rpx;
+  background: rgba(204, 204, 204, 1);
+  opacity: 1;
+  margin: 0 10rpx;
+  border-radius: 20rpx;
+}
+
+.dots.active {
+  width: 20rpx;
+  background-color: #377AFF;
+}
+
+.honor-gray-pic {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+}
+

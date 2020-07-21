@@ -1,0 +1,12 @@
+<view>
+  <view class="goal-details">
+    <view class="bg">
+      <image class="img" mode="scaleToFill" src="{{goalItem.icon}}"/>
+      <view class="text">{{goalItem.name}}</view>
+    </view>
+    <view class="introduce" a:if="{{isDisplay}}">" {{goalItem.declaration}} "</view>
+    <view class="description" a:if="{{isDisplay}}">"{{goalItem.description}}"</view>
+    <button a:if="{{isDisplay && !goalItem.added}}" class="btn {{btnBg}}" onTap="addGoals">添加目标</button>
+    <button a:if="{{isDisplay && goalItem.added}}" class="btn btn-bg-gray" >已添加目标</button>
+  </view>
+</view>

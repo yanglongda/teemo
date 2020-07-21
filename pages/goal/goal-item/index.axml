@@ -1,0 +1,12 @@
+<view>
+  <view class="goal-item">
+    <view class="goal-item-view">
+      <block a:for="{{goalList}}">
+        <view class="items" data-form="{{item}}" onTap="toDetails">
+          <image mode="scaleToFill" src="{{item.icon}}"/>
+          <view class="text">{{item.name}}</view>
+          <image class="addIcon" a:if="{{!item.added}}" mode="scaleToFill" src="/assets/goal/add_icon.png"/>
+        </view>
+      </block>
+    </view>
+  </view>

@@ -1,0 +1,25 @@
+<view>
+  <view class="article_box">
+    <swiper indicator-dots="{{false}}" class="article_swiper" onChange="bannerChange">
+      <block a:for="{{bannerList}}">
+        <swiper-item key="swiper-item-{{index}}">
+          <view data-form="{{item}}" onTap="getArticleDetail">
+            <image class="image" mode="scaleToFill" src="{{item.image}}" data-form="{{item}}" onTap="getArticleDetails"/>
+            <view class="title"><view class="decration">【</view><view class="text">{{item.title}}</view><view class="decration">】</view></view>
+            
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="bannerDots flex_c">
+      <view class="dots {{ currentIndex==index?'active':''}}" a:for="{{bannerList}}"></view>
+    </view>
+    <!--  -->
+    <scroll-view scroll-y="{{true}}" onScrollToLower="scrollMytrip" class="schedule-scroll scroll-view">
+      <view class="scrollView" a:for="{{list}}" data-form="{{item}}" onTap="getArticleDetails">
+         <image class="images" mode="scaleToFill" src="{{item.image}}"/>
+         <view class="text">{{item.title}}</view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

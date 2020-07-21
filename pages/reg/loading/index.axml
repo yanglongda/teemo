@@ -1,0 +1,14 @@
+<view class="loading" a:if="{{!openModal}}">
+  <image src="/assets/index/2.0/loading_gif.gif" mode="aspectFit" />
+</view>
+<view class="identity_select_bg" a:if="{{openModal}}">
+  <view class="titles">领取中小学生卡...</view>
+  <modal show="{{openModal}}" showClose="{{false}}">
+    <view slot="header" class="header">是否启用面部识别功能</view>
+           <view class="heads">开启面部识别后可丰富您在线下场景中的使用体验。</view>
+    <view  class="footer">
+      <view class="footer1" onTap="{{identityType == 'self'?'navigateToAuthSelf':'navigateToAuthInstead'}}">否</view>
+      <view class="footer2" onTap="studentCardToAlipay">是</view>
+    </view>
+  </modal>
+</view>

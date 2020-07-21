@@ -1,0 +1,30 @@
+<view a:if="{{show === 0}}">
+  <!-- --> 
+  <card-components scan="{{true}}" pages="me" defaultUserInfo="{{defaultUserInfo}}"/>
+  <view class="userInfo">
+    <list class="border_radius">
+      <list-item class="extra" thumb="/assets/me/icon/icon_score.png" arrow="{{true}}" data-score="{{score}}" onClick="onPointClick">我的学习值
+      <view  slot="extra">{{score}}分</view>  
+      </list-item>
+      <list-item thumb="/assets/me/icon/icon_info.png" arrow="{{true}}" onClick="onCardClick" >个人信息</list-item>
+      <list-item thumb="/assets/me/icon/icon_shenfen.png" arrow="{{true}}" onClick="onIdentityClick">个人身份</list-item>
+       <!-- <list-item thumb="/assets/me/icon/icon_study.png" arrow="{{true}}" onClick="schoolRollClick">学籍信息</list-item> -->
+      <list-item thumb="/assets/me/icon/icon_history.png" arrow="{{true}}" onClick="onCardRecordClick">用卡记录</list-item>     
+      <list-item thumb="/assets/me/icon/icon_pw.png" arrow="{{true}}" onClick="onAccountPassClick">账号密码</list-item> 
+    </list>
+    <view class="service-about border_radius">
+      <list>
+        <list-item thumb="/assets/me/icon/icon_help.png" arrow="{{true}}">帮助中心
+         <contact-button class="contact-button" tnt-inst-id="VNOJGFON" scene="SCE00041692" size="750rpx*100rpx" icon="/assets/me/help_box.png"/>
+        </list-item>
+        <list-item class="kfPhone" thumb="/assets/me/icon/icon_kf.png" arrow="{{false}}">客服电话
+         <view slot="extra">199 7009 7130</view>
+        </list-item>    
+         <list-item class="extra" thumb="/assets/me/icon/icon_set.png" arrow="{{true}}" onClick="upgradeVersionRec">关于我们
+         <view slot="extra">版本 V2.0.1</view>  
+        </list-item>   
+      </list>
+  </view>
+</view>
+<view a:if="{{show === 1}}" class="notData notDataImage">
+</view>

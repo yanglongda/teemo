@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "本人领卡",
+  "usingComponents":{
+     "list": "mini-antui/es/list/index",
+    "input-item": "mini-antui/es/input-item/index"
+  }
+}

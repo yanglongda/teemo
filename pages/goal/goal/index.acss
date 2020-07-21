@@ -1,0 +1,96 @@
+.operate-entry {
+  width: 92vw;
+  position: relative;
+  left: 4vw;
+  top: 20rpx;
+  height: 210rpx;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 3px 6px rgba(74, 148, 255, 0.1);
+  opacity: 1;
+  border-radius: 10px;
+  display: flex
+}
+
+.operate-view {
+  width: 230rpx;
+  position: relative
+}
+
+.operate-entry image {
+  height: 120rpx;
+  width: 120rpx;
+  position: absolute;
+  left: 55rpx;
+  top: 20rpx;
+}
+
+.operate-text {
+  width: 230rpx;
+  font-size: 14px;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: rgba(51, 51, 51, 1);
+  opacity: 1;
+  position: absolute;
+  bottom: 20rpx;
+  text-align: center
+}
+
+.none-goal {
+  width: 92vw;
+  position: relative;
+  left: 4vw;
+  top: 40rpx;
+  height: calc(100vh - 290rpx);
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 3px 6px rgba(74, 148, 255, 0.1);
+  opacity: 1;
+  border-radius: 20rpx;
+}
+
+.has-goal {
+  width: 92vw;
+  position: relative;
+  left: 4vw;
+  top: 40rpx;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 3px 6px rgba(74, 148, 255, 0.1);
+  opacity: 1;
+  border-radius: 20rpx;
+}
+
+.none-goal-text {
+  width: 92vw;
+  font-size: 32rpx;
+  position: absolute;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  text-align: center;
+  top: 330rpx
+}
+
+.add-goal-button {
+  position: absolute;
+  width: 280rpx;
+  height: 80rpx;
+  left: calc((92vw - 280rpx)/2);
+  line-height: 80rpx;
+  background: linear-gradient(270deg, rgba(95, 177, 250, 1) 0%, rgba(81, 134, 250, 1) 100%);
+  opacity: 1;
+  border-radius: 50rpx;
+  top: 430rpx;
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+}
+
+.am-list-line {
+  min-height: 140rpx
+}
+
+.am-list-thumb {
+  width: 100rpx;
+  height: 100rpx
+}

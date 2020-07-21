@@ -1,0 +1,33 @@
+<view>
+  <view class="operate-entry">
+    <view class="operate-view" onTap="redirectToAddGoal">
+      <image mode="scaleToFill" src="/assets/goal/add_goal_icon.png"/>
+      <view class="operate-text">添加小目标</view>
+    </view>
+    <view class="operate-view" onTap="redirectToHonors">
+      <image mode="scaleToFill" src="/assets/goal/honor_icon.png"/>
+      <view class="operate-text">勋章墙</view>
+    </view>
+    <view class="operate-view" onTap="redirectToGoalManage">
+      <image mode="scaleToFill" src="/assets/goal/goal_mana_icon.png"/>
+      <view class="operate-text">目标管理</view>
+    </view>
+  </view>
+  <!-- 没有小目标的情况 -->
+  <view class="none-goal" a:if="{{hasGoal == 1}}">
+    <view class="none-goal-text">先定一个小目标,迈出你的第一步</view>
+    <button class="add-goal-button" onTap="redirectToAddGoal">添加小目标</button>
+  </view>
+  <!-- 已经设定小目标的情况 -->
+  <view class="has-goal" a:if="{{hasGoal == 2}}">
+    <list>
+      <block a:for="{{goalList}}">
+        <list-item thumb="{{item.icon}}" arrow="{{true}}" data-form="{{item}}" onClick="redirctToClock">{{item.name}}
+          <view slot="extra" a:if="{{item.clocked}}">
+						已完成
+         </view>
+        </list-item>
+      </block>
+    </list>
+  </view>
+</view>

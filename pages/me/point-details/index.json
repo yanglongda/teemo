@@ -1,0 +1,9 @@
+{
+  "defaultTitle": "我的学分值",
+  "transparentTitle": "always",
+  "allowsBounceVertical":"YES",
+  "usingComponents":{
+    "list": "mini-antui/es/list/index",
+    "list-item": "mini-antui/es/list/list-item/index"
+  }
+}

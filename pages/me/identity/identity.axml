@@ -1,0 +1,9 @@
+<view class="content">
+  <view class="baseInfo">
+    <view class="service indentity text" a:for="{{identity}}">
+      <image src="/assets/card/indentity.png" mode="aspectFill" />
+      <view class="text1">{{item.name}}</view>
+    </view>
+  </view>
+  <view class="btn" onTap="updateIdentity">更新身份</view>
+</view>

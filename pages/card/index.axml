@@ -1,0 +1,66 @@
+<view class="content">
+  <!--蓝色卡模板  -->
+  <view a:for="{{defaultUserInfo}}">
+    <view class="card-blue">
+      <!-- 背景上的透明logo -->
+      <view style="width:100%;height:2.5rem" data-cardno="{{item.cardNo}}" data-form="{{item}}" onTap="toIndexByCardNo">
+        <!--用户信息  -->
+        <image mode="scaleToFill" class="card_head_image" src="{{item.avatar}}"/>
+        <view class="card_user_name">{{item.name}}</view>
+        <view class="card_card_No">卡号：{{item.studyId}}</view>
+        <view class="card_identity">
+          <view class="card_identity_box" a:for="{{item.identityName}}">
+            <view class="card_identity_name">{{item.name}}</view></view>
+        </view>
+      </view>
+      <view class="default-card" a:if="{{item.loginDefault}}">
+      </view>
+      <!-- 操作按钮  -->
+      <view class="opacity">
+        <view class="{{item.aliCardNo?'text1Display':'text1'}}" a:if="{{item.defaultCard == '0'}}" data-form="{{item}}" onTap="setDefaultCard">设置为默认卡
+        </view>
+        <view class="{{item.aliCardNo?'text1Display':'text1'}}" a:if="{{item.defaultCard == '1'}}">已设置为默认卡
+        </view>
+        <view class="text2" a:if="{{item.aliCardNo==''||item.aliCardNo==null}}" data-cardno="{{item.cardNo}}" onTap="addCardToAlipay">添加到支付宝卡包
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--黄色卡模板  -->
+  <view a:for="{{otherUserInfo}}" a:if="{{isOther}}">
+    <view class="card-red">
+      <view style="width:100%;height:2.5rem" data-cardno="{{item.cardNo}}" data-form="{{item}}" onTap="toIndexByCardNo">
+        <!--<image src="/assets/card/card-logo.png" class="card-logo" /> -->
+        <!--<view class="userInfo"><image src="{{item.avatar}}" mode="aspectFit" /><view class="text"><view class="text1">{{item.name}}</view><view class="text2">终身学习账号：{{item.studyId}}</view></view></view><view class="userIndentity"><view a:for="{{item.identityName}}">{{item.name}}</view></view> -->
+        <image mode="scaleToFill" class="card_head_image" src="{{item.avatar}}"/>
+        <view class="card_user_name">{{item.name}}</view>
+        <view class="card_card_No">卡号：{{item.studyId}}</view>
+        <view class="card_identity">
+          <view class="card_identity_box_yellow" a:for="{{item.identityName}}">
+            <view class="card_identity_name">{{item.name}}</view></view>
+        </view>
+      </view>
+      <view class="default-card" a:if="{{item.loginDefault}}">
+      </view>
+      <view class="opacity">
+        <view class="{{item.aliCardNo?'text1Display':'text1'}}" a:if="{{item.defaultCard == '0'}}" data-form="{{item}}" onTap="setDefaultCard">设置为默认卡
+        </view>
+        <view class="{{item.aliCardNo?'text1Display':'text1'}}" a:if="{{item.defaultCard == '1'}}">已设置为默认卡
+        </view>
+        <view class="text2" a:if="{{item.aliCardNo==''||item.aliCardNo==null}}" data-cardno="{{item.cardNo}}" onTap="addCardToAlipay">添加到支付宝卡包
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 灰色代领卡 -->
+  <view class="card-gray" onTap="redirctToGetCard">
+    <view>
+      <image class="add_icon" src="/assets/card/add_icon.png" mode="aspectFit" />
+      <view class="add_card">新增学习卡</view>
+    </view>
+  </view>
+  <view class="card-tips-box" a:if="{{tips}}">
+    <view class="text1">选择此项可以为本人或子女领卡</view>
+    <button class="btn" size="mini" type="primary" onTap="closeTips">知道了</button>
+  </view>
+</view>

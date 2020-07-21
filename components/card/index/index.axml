@@ -1,0 +1,18 @@
+<view class="index_card_box display_center {{scan?'noBg':''}}">
+    <view class="card_bg">
+      <image mode="scaleToFill" class="head_image" src="{{defaultUserInfo.avatar}}"/>
+      <view class="user_name">{{defaultUserInfo.name}}</view>
+      <view class="card_No">终身学习卡号：{{defaultUserInfo.studyId}}</view>
+      <view class="identity">
+        <view class="identity_box" a:for="{{defaultUserInfo.identityName}}"><view class="identity_name" >{{item.name}}</view></view>
+      </view>
+      <view class="qrcode scan"  onTap="redirctToQrCode">
+        <image mode="scaleToFill" src="/assets/index/2.0/qrcode.png"/>
+        <view class="text">二维码</view>
+      </view>
+      <view class="qrcode"  onTap="onScan">
+        <image mode="scaleToFill" src="/assets/index/2.0/scan.png"/>
+        <view class="text" style="margin-left:0px">扫一扫</view>
+      </view>
+    </view>
+  </view>

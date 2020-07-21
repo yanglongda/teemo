@@ -1,0 +1,17 @@
+<!-- 确认并授权页面 -->
+<view class="auth-page">
+  <view class="auth-info">
+    <view class="auth-info-title">个人信息
+    </view>
+    <list>
+      <input-item class="bagroundColor" name="name" data-field="name" value="{{hiddenInfo.name}}" disabled="true" placeholder="请输入真实姓名">姓名          
+      </input-item>
+      <input-item class="bagroundColor" name="idCard" data-field="idCard" maxlength='18' onInput="setIdCard" type='idcard' placeholder="请输入身份证号" value="{{hiddenInfo.idCard}}" disabled="true">身份证          
+      </input-item>
+      <input-item class="bagroundColor" name="mobile" data-field="mobile" maxlength='11'  placeholder="请输入手机号码" value="{{hiddenInfo.mobile}}" disabled="true">手机号          
+      </input-item>
+    </list>
+  </view>
+  <view class="auth-btn" onTap="authToStudyCard">下一步  
+  </view>
+</view>

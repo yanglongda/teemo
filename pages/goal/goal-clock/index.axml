@@ -1,0 +1,63 @@
+<view>
+  <view class="goal-details clock_bg" a:if="{{isDisplay}}">
+    <view class="bg_height">
+      <image class="days_tag" mode="scaleToFill" src="/assets/goal/days_tag.png"/>
+      <view class="insist_days" >坚持天数</view>
+      <view class="insist_days_num">{{insistDays}}</view>
+      <image class="img blank" mode="scaleToFill" src="{{goalItem.icon}}"/>
+      <view class="text blank1">{{goalItem.name}}</view>
+    </view>
+    <view class="introduce">" {{goalItem.declaration}} "</view>
+    <button a:if="{{!goalItem.clocked && isInTime}}" class="btn {{btnBg}} button2" onTap="goalsClockIn">打卡</button>
+    <button a:if="{{goalItem.clocked }}" class="btn btn-bg-gray button2">已完成目标</button>
+    <button a:if="{{!goalItem.clocked && !isInTime}}" class="btn btn-bg-gray button1">{{goalItem.clockStartTime}}-{{goalItem.clockEndTime}}再来打卡哟</button>
+  </view>
+  <view class="canlendar_bg" a:if="{{isDisplay}}">
+    <view class="canlendar_con"  >
+      <list>
+        <list-item arrow="{{true}}" onClick="redirectToClockRecord">打卡记录
+          <view slot="extra">
+						已坚持{{insistDays}}天
+         </view>
+        </list-item>
+      </list>
+    </view>
+  </view>
+  <!-- 打卡成功模态框 -->
+  <modal class="clock_modal" show="{{modalOpen}}" onModalClose="onModalClose">
+    <image class="image" mode="scaleToFill" src="/assets/goal/success.png"/>
+    <view class="list_modal">
+      <view class="success_view">
+        <image mode="scaleToFill" src="/assets/goal/score_icon.png"/>
+        <view class="text1">学习值</view>
+        <view class="text2">+1</view>
+      </view>
+      <view class="success_view">
+        <image mode="scaleToFill" src="/assets/goal/days.png"/>
+        <view class="text1">坚持天数</view>
+        <view class="text2">+1</view>
+      </view>
+      <!--<list><list-item thumb="/assets/goal/days.png">学习值<view slot="extra">+1</view></list-item><list-item thumb="/assets/goal/days.png">坚持天数<view slot="extra">+1</view></list-item></list> -->
+    </view>
+  </modal>
+  <!-- 获得勋章模态框 -->
+  <view class="medal_modal">
+  <modal show="{{honorModal}}" onModalClose="onModalClose21" closeType="1">
+      <view class="get_honor_text">-恭喜您，获得新勋章-</view>
+      <swiper class="honor_modal" duration="500" interval="3000" previous-margin="28px" next-margin="28px" circular="{{false}}" onChange="honorChange">
+        <block a:for="{{medalsList}}">
+          <swiper-item >
+            <view class="image">
+              <image class="medal_icon" mode="scaleToFill" src="{{item.icon}}"/>
+              <view class="medal_remark">{{item.remark}}</view>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+      <view class="get_honor_text honor_text2" onTap="redirectToHonorList">我的勋章墙>></view>
+  </modal>
+  </view>
+  <!--<modal show="{{true}}" onModalClose="onModalClick3" advice="{{true}}" style="width:375px"><view class="honor_modal"></view> -->
+  <!--<swiper class="honor_modal"><block a:for="{{['#4A90E2','#F5A623']}}"><swiper-item ><view style="background-color: {{item}};width:300px;;height:380px"/></swiper-item></block></swiper> -->
+  <!--</modal> -->
+</view>

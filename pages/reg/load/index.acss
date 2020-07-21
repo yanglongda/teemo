@@ -1,0 +1,12 @@
+.loading{
+  width:100vw;
+  background: white
+}
+
+.loading image{
+  width:360rpx;
+  height: 360rpx;
+  margin-top:23vh;
+  margin-left: calc((100vw - 360rpx)/2);
+  /* margin:60% 0 0 175rpx */
+}

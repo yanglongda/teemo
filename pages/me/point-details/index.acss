@@ -1,0 +1,260 @@
+.point_details_bg {
+  width: 100vw;
+  height: 612rpx;
+  background: url(/assets/goal/goal_title_bg.png);
+  background-size: contain;
+  opacity: 1;
+  position: relative
+}
+
+.total_score {
+  width: 100vw;
+  height: 100rpx;
+  top: 230rpx;
+  position: absolute;
+  text-align: center;
+  font-size: 40px;
+  line-height: 100rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.point_details_bg .total_score image {
+  height: 100rpx;
+  width: 100rpx;
+  margin-right: 10rpx;
+  /* margin-left: 32% */
+}
+
+.total_score .text1 {
+  font-size: 24rpx;
+  height: 100rpx;
+  line-height: 130rpx
+}
+
+.total_score .text2 {
+  padding-top: -20rpx;
+  height: 100rpx;
+}
+
+.get_score_btn {
+  width: 80px;
+  height: 24px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  opacity: 1;
+  border-radius: 6px;
+  position: absolute;
+  top: 382rpx;
+  left: 296rpx;
+  font-size: 12px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 1);
+  text-align: center
+}
+
+.schedule-container {
+  width: 92vw;
+  height: calc(100vh - 500rpx);
+  /* height: 844rpx; */
+  overflow: hidden;
+  position: absolute;
+  top: 490rpx;
+  left: 4vw;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 3px 6px rgba(74, 148, 255, 0.16);
+  border-radius: 10px;
+}
+
+.schedule-scroll {
+  width: 96%;
+  height: calc(100% - 100rpx);
+  position: absolute;
+  right: 10px;
+  left: 10px
+}
+
+.spinner {
+  text-align: center;
+  height: 140rpx;
+  line-height: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner .bounce {
+  margin-top: 20rpx;
+  width: 13rpx;
+  height: 21rpx;
+  display: inline-block;
+  animation-fill-mode: both;
+  margin-left: 13rpx;
+  transform: skewX(-15deg);
+}
+
+.spinner .bounce1 {
+  background: #108EE9;
+  animation: bouncedelay1 2.1s infinite linear;
+}
+
+.spinner .bounce2 {
+  background: #9DCDEF;
+  animation: bouncedelay2 2.1s infinite linear;
+}
+
+.spinner .bounce3 {
+  background: #EAECF3;
+  animation: bouncedelay3 2.1s infinite linear;
+}
+
+.spinner .spinner-word {
+  margin-top: 24rpx;
+  line-height: 40rpx;
+  height: 40rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #999999;
+}
+
+@keyframes bouncedelay1 {
+  0% {
+    background: #108EE9;
+  }
+  50% {
+    background: #9DCDEF;
+  }
+  100% {
+    background: #EAECF3;
+  }
+}
+
+@keyframes bouncedelay2 {
+  0% {
+    background: #9DCDEF;
+  }
+  50% {
+    background: #EAECF3;
+  }
+  100% {
+    background: #108EE9;
+  }
+}
+
+@keyframes bouncedelay3 {
+  0% {
+    background: #EAECF3;
+  }
+  50% {
+    background: #108EE9;
+  }
+  100% {
+    background: #9DCDEF;
+  }
+}
+
+.schedule-detail {
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 20rpx;
+}
+
+.schedule-place, .schedule-trainNumber, .schedule-time {
+  padding: 30rpx 30rpx 35rpx 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 32rpx;
+  color: #333333;
+}
+
+.schedule-money {
+  color: #E8541E;
+}
+
+.font {
+  color: #999999;
+  font-size: 28rpx;
+}
+
+.padd {
+  padding: 0rpx 30rpx 20rpx 30rpx;
+  ;
+}
+
+.am-list-content, .am-list-extra {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.content {
+  width: 94%;
+  margin: 30rpx auto;
+}
+
+.content .am-list-item {
+  padding-left: 10rpx
+}
+
+.content .am-list-line {
+  padding-right: 0;
+  border: none;
+  min-height: 140rpx;
+}
+
+.content .am-list-body {
+  border: none
+}
+
+.extra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 80rpx;
+  color: rgba(251, 172, 73, 1);
+  font-size: 40rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+}
+
+.content .am-list-content {
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: rgba(51, 51, 51, 1);
+}
+
+.brief {
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+}
+
+.point_record {
+  height: 70rpx;
+  font-size: 17px;
+  font-family: PingFang SC;
+  font-weight: bold;
+  line-height: 24px;
+  color: rgba(51, 51, 51, 1);
+  opacity: 1;
+}
+
+.no_data {
+  width: 92vw;
+  text-align: center;
+  height: 22px;
+  font-size: 16px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgba(51, 51, 51, 1);
+  opacity: 1;
+  margin-top: 20rpx
+}

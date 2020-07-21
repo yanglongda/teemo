@@ -1,0 +1,95 @@
+@import "../../results/error-page/index.acss";
+
+@import "../../me/point-details/index.acss";
+
+.content {
+  width: 100vw;
+  margin:0 !important
+}
+.btn_area{
+  position: relative
+}
+.btn_area .button {
+  padding: 18rpx;
+  border-radius: 54rpx;
+  margin-left: 30rpx;
+  display: flex;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 1px 3px rgba(74, 148, 255, 0.16);
+  opacity: 1;
+  border-radius: 54rpx;
+  justify-content: center;
+  align-items: center;;
+  margin-top: 30rpx
+}
+.btn_area image{
+  width:42rpx;
+  height: 42rpx;
+  position: absolute;
+  top: 14rpx;
+  right: 40rpx
+}
+.large {
+  width: 200rpx
+}
+
+.btn_area .button .text {
+  font-size: 28rpx;
+  text-align: center
+}
+
+.card-record {
+  background: white;
+}
+
+.card-line {
+  margin-left: 30rpx;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.card-line .text1 {
+  font-size: 32rpx;
+  padding: 20rpx 0px 16rpx;
+  display: flex;
+  position: relative
+  
+}
+
+.card-line .text1 .num {
+  position: absolute;
+  right: 60rpx;
+  top: 16rpx;
+  font-size: 36rpx;
+  font-weight: 500;
+}
+
+.card-line .text2 {
+  font-size: 24rpx;
+  padding-bottom: 16rpx
+}
+
+.no-record-text {
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  text-align: center;
+  color: rgba(153, 153, 153, 1);
+}
+
+.tangle {
+  width: 0;
+  height: 0;
+  margin-top: 8rpx;
+  border-width: 10rpx;
+  border-style: solid;
+  border-color: #999999 transparent transparent transparent;
+  margin-left: 5rpx
+}
+
+.scroll{
+  width:100%;
+  left:0;
+  top:130rpx;
+  background:white;
+  height:calc(100% - 1.4rem)
+}

@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "目标管理",
+  "usingComponents": {
+    "list": "mini-antui/es/list/index",
+    "list-item": "mini-antui/es/list/list-item/index"
+  }
+}

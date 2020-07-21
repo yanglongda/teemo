@@ -1,0 +1,20 @@
+<view class="z-modal-{{show ? 'show' : 'hide'}}" disable-scroll="{{disableScroll}}">
+	<view class="z-modal-mask" />
+	<view class="z-modal-document {{advice === true ? 'z-modal-document-advice' : '' }}">
+		<view class="z-modal {{className}}">
+			<view a:if="{{topImage}}" class="z-modal-image z-modal-image-{{topImageSize}}">
+				<image src="{{topImage}}" />
+			</view>
+			<view class="z-modal-header" a:if="{{$slots.header}}">
+				<slot name="header" />
+			</view>
+			<view class="z-modal-body">
+				<slot />
+			</view>
+			<view class="z-modal-footer" hover-class="z-modal-footer-active" a:if="{{$slots.footer}}" onTap="onModalClick">
+				<slot name="footer" />
+			</view>
+			<view class="z-modal-close {{closeType === '1' ? 'z-modal-close-white' : ''}}" hover-class="z-modal-close-active" a:if="{{showClose}}" onTap="onModalClose" />
+		</view>
+	</view>
+</view>

@@ -1,0 +1,18 @@
+<view class="qrcode">
+  <!-- <canvas style="width: 200px; height: 200px;" id="myQrcode"></canvas> -->
+  <view class="qrcode_box">
+    <image src="{{avatar}}" mode="aspectFit" />
+    <view class="name">{{name}}</view>
+    <view class="studyNo">{{studyNo}}</view>
+    <view class="canvas">
+      <canvas style="width:180px;height:180px" id="myQrcode"></canvas>
+    </view>
+    <view class="tips">
+      <view class="tips1">展示二维码给对方扫一扫</view>
+      <!-- <view onTap="forceRefreshCode" class="tips3">
+        <view class="image"></view>
+        <view class="tips2" >刷新</view>
+      </view> -->
+    </view>
+  </view>
+</view>
